@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn French</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+            margin: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #35424a;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        h1, h2 {
+            color: #35424a;
+        }
+
+        .nav-buttons {
+            margin: 20px 0;
+        }
+
+        .nav-buttons a {
+            padding: 10px;
+            background: #35424a;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-right: 10px;
+            transition: background 0.3s;
+        }
+
+        .nav-buttons a:hover {
+            background: #45a049;
+        }
+
+        .lesson {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fafafa;
+        }
+
+        .lesson h2 {
+            margin-top: 0;
+        }
+
+        .pronounce-button {
+            background: #35424a;
+            color: #ffffff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        .pronounce-button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Learn French</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#lesson1">Lesson 1</a></li>
+            <li><a href="#lesson2">Lesson 2</a></li>
+            <li><a href="#lesson3">Lesson 3</a></li>
+            <li><a href="#lesson4">Lesson 4</a></li>
+            <li><a href="#lesson5">Lesson 5</a></li>
+            <li><a href="#lesson6">Lesson 6</a></li>
+            <li><a href="#lesson7">Lesson 7</a></li>
+            <li><a href="#lesson8">Lesson 8</a></li>
+            <li><a href="#lesson9">Lesson 9</a></li>
+            <li><a href="#lesson10">Lesson 10</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- Home Section -->
+    <section id="home" class="lesson">
+        <h2>Welcome to Learn French</h2>
+        <p>Your journey to learning French starts here! Explore our lessons and resources.</p>
+    </section>
+
+    <!-- Lesson 1: Numbers -->
+    <section id="lesson1" class="lesson">
+        <h2>Lesson 1: Numbers</h2>
+        <p>Here are the numbers from 1 to 10 in French:</p>
+        <ul>
+            <li>1 - un <button class="pronounce-button" onclick="speak('un')">??</button></li>
+            <li>2 - deux <button class="pronounce-button" onclick="speak('deux')">??</button></li>
+            <li>3 - trois <button class="pronounce-button" onclick="speak('trois')">??</button></li>
+            <li>4 - quatre <button class="pronounce-button" onclick="speak('quatre')">??</button></li>
+            <li>5 - cinq <button class="pronounce-button" onclick="speak('cinq')">??</button></li>
+            <li>6 - six <button class="pronounce-button" onclick="speak('six')">??</button></li>
+            <li>7 - sept <button class="pronounce-button" onclick="speak('sept')">??</button></li>
+            <li>8 - huit <button class="pronounce-button" onclick="speak('huit')">??</button></li>
+            <li>9 - neuf <button class="pronounce-button" onclick="speak('neuf')">??</button></li>
+            <li>10 - dix <button class="pronounce-button" onclick="speak('dix')">??</button></li>
+        </ul>
+        <p>Practice writing these numbers and try using them in sentences!</p>
+        <div class="nav-buttons">
+            <a href="#home">Back to Home</a>
+            <a href="#lesson2">Next Lesson: Days of the Week</a>
+        </div>
+    </section>
+
+    <!-- Lesson 2: Days of the Week -->
+    <section id="lesson2" class="lesson">
+        <h2>Lesson 2: Days of the Week</h2>
+        <p>Here are the days of the week in French:</p>
+        <ul>
+            <li>dimanche - Sunday <button class="pronounce-button" onclick="speak('dimanche')">??</button></li>
+            <li>lundi - Monday <button class="pronounce-button" onclick="speak('lundi')">??</button></li>
+            <li>mardi - Tuesday <button class="pronounce-button" onclick="speak('mardi')">??</button></li>
+            <li>mercredi - Wednesday <button class="pronounce-button" onclick="speak('mercredi')">??</button></li>
+            <li>jeudi - Thursday <button class="pronounce-button" onclick="speak('jeudi')">??</button></li>
+            <li>vendredi - Friday <button class="pronounce-button" onclick="speak('vendredi')">??</button></li>
+            <li>samedi - Saturday <button class="pronounce-button" onclick="speak('samedi')">??</button></li>
+        </ul>
+        <p>Try using these days in sentences or practice writing them!</p>
+        <div class="nav-buttons">
+            <a href="#lesson1">Back to Lesson 1</a>
+            <a href="#lesson3">Next Lesson: Colors</a>
+        </div>
+    </section>
+
+    <!-- Lesson 3: Colors -->
+    <section id="lesson3" class="lesson">
+        <h2>Lesson 3: Colors</h2>
+        <p>Here are some colors in French:</p>
+        <ul>
+            <li>rouge - Red <button class="pronounce-button" onclick="speak('rouge')">??</button></li>
+            <li>vert - Green <button class="pronounce-button" onclick="speak('vert')">??</button></li>
+            <li>bleu - Blue <button class="pronounce-button" onclick="speak('bleu')">??</button></li>
+            <li>jaune - Yellow <button class="pronounce-button" onclick="speak('jaune')">??</button></li>
+            <li>noir - Black <button class="pronounce-button" onclick="speak('noir')">??</button></li>
+            <li>blanc - White <button class="pronounce-button" onclick="speak('blanc')">??</button></li>
+        </ul>
+        <p>Practice using these colors in sentences!</p>
+        <div class="nav-buttons">
+            <a href="#lesson2">Back to Lesson 2</a>
+            <a href="#lesson4">Next Lesson: Family Vocabulary</a>
+        </div>
+    </section>
+
+    <!-- Lesson 4: Family Vocabulary -->
+    <section id="lesson4" class="lesson">
+        <h2>Lesson 4: Family Vocabulary</h2>
+        <p>Here are some family-related words in French:</p>
+        <ul>
+            <li>mère - Mother <button class="pronounce-button" onclick="speak('mère')">??</button></li>
+            <li>père - Father <button class="pronounce-button" onclick="speak('père')">??</button></li>
+            <li>frère - Brother <button class="pronounce-button" onclick="speak('frère')">??</button></li>
+            <li>sœur - Sister <button class="pronounce-button" onclick="speak('sœur')">??</button></li>
+            <li>grand-mère - Grandmother <button class="pronounce-button" onclick="speak('grand-mère')">??</button></li>
+            <li>grand-père - Grandfather <button class="pronounce-button" onclick="speak('grand-père')">??</button></li>
+        </ul>
+        <p>Try using these words when talking about your family!</p>
+        <div class="nav-buttons">
+            <a href="#lesson3">Back to Lesson 3</a>
+            <a href="#lesson5">Next Lesson: Common Phrases</a>
+        </div>
+    </section>
+
+    <!-- Lesson 5: Common Phrases -->
+    <section id="lesson5" class="lesson">
+        <h2>Lesson 5: Common Phrases</h2>
+        <p>Here are some common phrases in French:</p>
+        <ul>
+            <li>Bonjour - Good morning <button class="pronounce-button" onclick="speak('Bonjour')">??</button></li>
+            <li>Merci - Thank you <button class="pronounce-button" onclick="speak('Merci')">??</button></li>
+            <li>S'il vous plaît - Please <button class="pronounce-button" onclick="speak('S\'il vous plaît')">??</button></li>
+            <li>Excusez-moi - Excuse me <button class="pronounce-button" onclick="speak('Excusez-moi')">??</button></li>
+        </ul>
+        <p>Practice these phrases in conversations!</p>
+        <div class="nav-buttons">
+            <a href="#lesson4">Back to Lesson 4</a>
+            <a href="#lesson6">Next Lesson: Basic Verbs</a>
+        </div>
+    </section>
+
+    <!-- Lesson 6: Basic Verbs -->
+    <section id="lesson6" class="lesson">
+        <h2>Lesson 6: Basic Verbs</h2>
+        <p>Here are some basic verbs in French:</p>
+        <ul>
+            <li>être - to be <button class="pronounce-button" onclick="speak('être')">??</button></li>
+            <li>avoir - to have <button class="pronounce-button" onclick="speak('avoir')">??</button></li>
+            <li>faire - to do/make <button class="pronounce-button" onclick="speak('faire')">??</button></li>
+            <li>aller - to go <button class="pronounce-button" onclick="speak('aller')">??</button></li>
+        </ul>
+        <p>Try using these verbs in sentences!</p>
+        <div class="nav-buttons">
+            <a href="#lesson5">Back to Lesson 5</a>
+            <a href="#lesson7">Next Lesson: Common Adjectives</a>
+        </div>
+    </section>
+
+    <!-- Lesson 7: Common Adjectives -->
+    <section id="lesson7" class="lesson">
+        <h2>Lesson 7: Common Adjectives</h2>
+        <p>Here are some common adjectives in French:</p>
+        <ul>
+            <li>grand - big <button class="pronounce-button" onclick="speak('grand')">??</button></li>
+            <li>petit - small <button class="pronounce-button" onclick="speak('petit')">??</button></li>
+            <li>beau - beautiful <button class="pronounce-button" onclick="speak('beau')">??</button></li>
+            <li>jeune - young <button class="pronounce-button" onclick="speak('jeune')">??</button></li>
+        </ul>
+        <p>Practice describing things using these adjectives!</p>
+        <div class="nav-buttons">
+            <a href="#lesson6">Back to Lesson 6</a>
+            <a href="#lesson8">Next Lesson: Greetings</a>
+        </div>
+    </section>
+
+    <!-- Lesson 8: Greetings -->
+    <section id="lesson8" class="lesson">
+        <h2>Lesson 8: Greetings</h2>
+        <p>Here are some common greetings in French:</p>
+        <ul>
+            <li>Bonjour - Good morning <button class="pronounce-button" onclick="speak('Bonjour')">??</button></li>
+            <li>Bonsoir - Good evening <button class="pronounce-button" onclick="speak('Bonsoir')">??</button></li>
+            <li>Comment ça va? - How are you? <button class="pronounce-button" onclick="speak('Comment ça va?')">??</button></li>
+            <li>Ça va bien, merci - I'm fine, thank you <button class="pronounce-button" onclick="speak('Ça va bien, merci')">??</button></li>
+            <li>Au revoir - Goodbye <button class="pronounce-button" onclick="speak('Au revoir')">??</button></li>
+        </ul>
+        <p>Practice these greetings with your friends!</p>
+        <div class="nav-buttons">
+            <a href="#lesson7">Back to Lesson 7</a>
+            <a href="#lesson9">Next Lesson: Basic Questions</a>
+        </div>
+    </section>
+
+    <!-- Lesson 9: Basic Questions -->
+    <section id="lesson9" class="lesson">
+        <h2>Lesson 9: Basic Questions</h2>
+        <p>Here are some basic questions in French:</p>
+        <ul>
+            <li>Comment t'appelles-tu? - What is your name? <button class="pronounce-button" onclick="speak('Comment t\'appelles-tu?')">??</button></li>
+            <li>D'où viens-tu? - Where are you from? <button class="pronounce-button" onclick="speak('D\'où viens-tu?')">??</button></li>
+            <li>Quel âge as-tu? - How old are you? <button class="pronounce-button" onclick="speak('Quel âge as-tu?')">??</button></li>
+            <li>Pourquoi? - Why? <button class="pronounce-button" onclick="speak('Pourquoi?')">??</button></li>
+        </ul>
+        <p>Try asking these questions to someone!</p>
+        <div class="nav-buttons">
+            <a href="#lesson8">Back to Lesson 8</a>
+            <a href="#lesson10">Next Lesson: Directions</a>
+        </div>
+    </section>
+
+    <!-- Lesson 10: Directions -->
+    <section id="lesson10" class="lesson">
+        <h2>Lesson 10: Directions</h2>
+        <p>Here are some words related to directions in French:</p>
+        <ul>
+            <li>devant - In front of <button class="pronounce-button" onclick="speak('devant')">??</button></li>
+            <li>derrière - Behind <button class="pronounce-button" onclick="speak('derrière')">??</button></li>
+            <li>à droite - Right <button class="pronounce-button" onclick="speak('à droite')">??</button></li>
+            <li>à gauche - Left <button class="pronounce-button" onclick="speak('à gauche')">??</button></li>
+            <li>tout droit - Straight <button class="pronounce-button" onclick="speak('tout droit')">??</button></li>
+        </ul>
+        <p>Practice giving directions using these words!</p>
+        <div class="nav-buttons">
+            <a href="#lesson9">Back to Lesson 9</a>
+            <a href="#lesson11">Next Lesson: Weather Vocabulary</a>
+        </div>
+    </section>
+
+    <!-- Lesson 11: Weather Vocabulary -->
+    <section id="lesson11" class="lesson">
+        <h2>Lesson 11: Weather Vocabulary</h2>
+        <p>Here are some weather-related terms in French:</p>
+        <ul>
+            <li>ensoleillé - Sunny <button class="pronounce-button" onclick="speak('ensoleillé')">??</button></li>
+            <li>pluvieux - Rainy <button class="pronounce-button" onclick="speak('pluvieux')">??</button></li>
+            <li>neigeux - Snowy <button class="pronounce-button" onclick="speak('neigeux')">??</button></li>
+            <li>nuageux - Cloudy <button class="pronounce-button" onclick="speak('nuageux')">??</button></li>
+        </ul>
+        <p>Try describing the weather using these terms!</p>
+        <div class="nav-buttons">
+            <a href="#lesson10">Back to Lesson 10</a>
+            <a href="#lesson12">Next Lesson: Common Foods</a>
+        </div>
+    </section>
+
+    <!-- Lesson 12: Common Foods -->
+    <section id="lesson12" class="lesson">
+        <h2>Lesson 12: Common Foods</h2>
+        <p>Here are some common foods in French:</p>
+        <ul>
+            <li>pain - Bread <button class="pronounce-button" onclick="speak('pain')">??</button></li>
+            <li>fromage - Cheese <button class="pronounce-button" onclick="speak('fromage')">??</button></li>
+            <li>pomme - Apple <button class="pronounce-button" onclick="speak('pomme')">??</button></li>
+            <li>viande - Meat <button class="pronounce-button" onclick="speak('viande')">??</button></li>
+        </ul>
+        <p>Practice ordering these foods in a restaurant!</p>
+        <div class="nav-buttons">
+            <a href="#lesson11">Back to Lesson 11</a>
+            <a href="#lesson13">Next Lesson: Travel Vocabulary</a>
+        </div>
+    </section>
+
+    <!-- Lesson 13: Travel Vocabulary -->
+    <section id="lesson13" class="lesson">
+        <h2>Lesson 13: Travel Vocabulary</h2>
+        <p>Here are some travel-related terms in French:</p>
+        <ul>
+            <li>voyage - Travel <button class="pronounce-button" onclick="speak('voyage')">??</button></li>
+            <li>aéroport - Airport <button class="pronounce-button" onclick="speak('aéroport')">??</button></li>
+            <li>hôtel - Hotel <button class="pronounce-button" onclick="speak('hôtel')">??</button></li>
+            <li>billet - Ticket <button class="pronounce-button" onclick="speak('billet')">??</button></li>
+        </ul>
+        <p>Try using these words when planning your travels!</p>
+        <div class="nav-buttons">
+            <a href="#lesson12">Back to Lesson 12</a>
+            <a href="#lesson14">Next Lesson: School Vocabulary</a>
+        </div>
+    </section>
+
+    <!-- Lesson 14: School Vocabulary -->
+    <section id="lesson14" class="lesson">
+        <h2>Lesson 14: School Vocabulary</h2>
+        <p>Here are some school-related terms in French:</p>
+        <ul>
+            <li>école - School <button class="pronounce-button" onclick="speak('école')">??</button></li>
+            <li>professeur - Teacher <button class="pronounce-button" onclick="speak('professeur')">??</button></li>
+            <li>élève - Student <button class="pronounce-button" onclick="speak('élève')">??</button></li>
+            <li>livre - Book <button class="pronounce-button" onclick="speak('livre')">??</button></li>
+        </ul>
+        <p>Practice using these words in a school context!</p>
+        <div class="nav-buttons">
+            <a href="#lesson13">Back to Lesson 13</a>
+            <a href="#lesson15">Next Lesson: Hobbies Vocabulary</a>
+        </div>
+    </section>
+
+    <!-- Lesson 15: Hobbies Vocabulary -->
+    <section id="lesson15" class="lesson">
+        <h2>Lesson 15: Hobbies Vocabulary</h2>
+        <p>Here are some hobbies in French:</p>
+        <ul>
+            <li>lecture - Reading <button class="pronounce-button" onclick="speak('lecture')">??</button></li>
+            <li>musique - Music <button class="pronounce-button" onclick="speak('musique')">??</button></li>
+            <li>sport - Sports <button class="pronounce-button" onclick="speak('sport')">??</button></li>
+            <li>cuisine - Cooking <button class="pronounce-button" onclick="speak('cuisine')">??</button></li>
+        </ul>
+        <p>Practice using these words to describe your hobbies!</p>
+        <div class="nav-buttons">
+            <a href="#lesson14">Back to Lesson 14</a>
+            <a href="#home">Back to Home</a>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2024 Learn French. All rights reserved.</p>
+</footer>
+
+<script>
+    function speak(text) {
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'fr-FR'; // Set language to French
+        window.speechSynthesis.speak(utterance);
+    }
+</script>
+
+</body>
+</html>
